@@ -60,16 +60,36 @@ nav li a{
 }
 .btn-1st{
     color: #FFF;
-    background-color: ;
-    text-align: center;
+    background-color: #FF900F;
     font-family: "Work Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    width: 180px;
-    height: 64px;
-    flex-shrink: 0;  
+    font-size: 1.25rem; 
     border-radius: 8px;
     background: #FF900E;
+    cursor: pointer;
+    padding: 20px 25px;
+    border: 0;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+/* responsive media query */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
 }
